@@ -1,0 +1,303 @@
+-body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+.navbar{
+    min-height: 33px !important;
+    margin-bottom:0;
+    border-radius:0;
+}
+
+.navbar-nav > li > a, .navbar-brand{
+    padding-top:6px !important;
+    padding-bottom:0 !important;
+    height: 33px;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: #c0392b;
+}
+.navbar-default .navbar-brand {
+    color: black;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: black;
+}
+.navbar-default .navbar-text {
+    color:black;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffbbbc;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #c0392b;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ffbbbc;
+    background-color: #c0392b;
+}
+.navbar-default .navbar-toggle {
+    border-color: #c0392b;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #c0392b;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+    color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+    color: #ffbbbc;
+}
+
+/* Custom */
+.main-color-bg{
+    background-color: #e74c3c !important;
+    border-color: #c0392b !important;
+    color:#ffffff !important;
+}
+
+/* Header */
+#header{
+    background:#333333;
+    color:#ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#header .create{
+    padding-top: 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb{
+    background:#cccccc;
+    color:#333333;
+}
+
+.breadcrumb a{
+    color:#333333;
+}
+
+/* Progress Bars */
+.progress-bar{
+    background:#333333;
+    color:#ffffff;
+}
+
+.dash-box{
+    text-align:center;
+}
+
+#login{
+    margin-top:30px;
+}
+
+/* Footer */
+#footer{
+    background:#333333;
+    color:#ffffff;
+    text-align:center;
+    padding:30px;
+    margin-top:30px;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ecf0f1;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffbbbc;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffbbbc;
+        background-color: #c0392b;
+    }
+}
+#btn_add_edit{
+    margin-left: 40px;
+}
+/* #btn_add_edit input{
+  background-color: rgb(183, 184, 182);
+} */
+#btn_add_edit input:hover{
+    background-color:black;
+}
+#user_add_form {
+    width: 400px;
+    height: 600px;
+    margin-top:30px;
+    margin-left: 60px;
+    padding-bottom:30px ;
+    padding-top:30px ;
+}
+#user_add_form th{
+    width: 40px;
+    height: 40px;
+
+}
+#user_add_form input{
+    width: 340px;
+    margin-right: 120px;
+    border-radius: 5px;
+
+}
+#user_add_form input:hover{
+    box-shadow: 1px 1px 1px 1px blue;
+}
+
+#user_add_form tr td select {
+    margin-left: -384px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+#user_add_form tr {
+
+    padding-bottom: 40px ;
+}
+#user_add_form tr  th {
+    background-color: rgb(224, 221, 221);
+    margin-bottom: 0px !important;
+    padding-left:110px ;
+    border-radius: 3px;
+
+}
+
+
+#blog_add th{
+    width: 400px;
+    height: 40px;
+}
+#blog_add th input{
+    margin-left: 30px;
+}
+#product_add{
+    margin-left: 40px;
+}
+#product_add tr{
+    height: 30px;
+    margin-bottom: 10px;
+
+}
+#product_add img{
+    width: 350px;
+    height: 300px;
+    margin-left: px;
+    margin-top: -25px;
+}
+/*Post page*/
+
+.post_noidung{
+    text-align: justify;
+    width: 420px;
+}
+#btn_them_post ,#btn_them_user{
+    margin-left: 813px;
+    margin-bottom: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+}
+#btn_them_post , #btn_them_user,#btn_get_list{
+    background-color: green;
+    color: white;
+    padding: 4px;
+}
+
+#blog_add_form {
+    width: 600px;
+    height: 600px;
+    margin-left: 60px;
+    background-color: rgb(228, 224, 224);
+    border-radius: 13px;
+    padding-bottom: 30px;
+}
+
+#blog_add_form th{
+    padding-left: 60px;
+    padding-right: 50px;
+
+}
+
+#blog_add_form input ,textarea{
+    font-weight: 200px;
+    border-radius: 5px;
+}
+#phan_hoi_kh{
+    width: 800px;
+    height: 500px;
+    margin-left: 220px;
+}
+.table-striped{
+    border: 2px solid gray;
+}
+.table-striped tr{
+    border: 2px solid rgb(184, 180, 180);
+}
+
+.chi_tiet{
+    border:none;
+
+}
+
+.panel.panel-default {
+    width: 1000px;
+}
+ol.breadcrumb {
+    width: 1292px;
+}
+
+
+/* --------------------- */
+
+.navbar-header {
+    padding: 8px;
+    padding-left: 14px;
+    font-weight: 900;
+}
+ul.nav.navbar-nav.navbar-right {
+    margin-right: -169px;
+}
+div#navbar {
+    padding-bottom: 14px;
+}
+img.logo {
+    width: 92px;
+    height: 57px;
+}
+
+.logoadmin {
+    display: flex ;
+}
+a.navbar-brand {
+    margin-top: 13px;
+
+}
+.glyphicon-pencil ,.glyphicon-list-alt ,.glyphicon-user ,.glyphicon-shopping-cart ,.glyphicon-book ,.glyphicon-envelope{
+    color: rgb(84, 84, 146);
+}
