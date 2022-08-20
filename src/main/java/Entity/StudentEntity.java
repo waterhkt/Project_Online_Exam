@@ -207,7 +207,7 @@ public class StudentEntity {
 
     }
     //Lấy ra tất cả Khoa trong database
-    //Lấy thông tin tài khoản cần chỉnh sữa
+    //Lấy thông tin tài khoản cần Sửa
     public static double getAllGrade(int userID) {
         double result =0 ;
         Connection con=null;
@@ -276,7 +276,7 @@ public class StudentEntity {
             return  0;
         }
     }
-    //Chỉnh sữa thông tin question
+    //Sửa thông tin question
     public static int update(double grade,int stuId){
         Connection con;
         PreparedStatement pre = null;

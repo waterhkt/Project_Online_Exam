@@ -10,14 +10,14 @@
 <%@ taglib prefix="cc" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Danh sách câu hỏi</title>
     <link rel="stylesheet" href="./css/list.css">
     <link href="admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="admin/css/font-awesome.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Question</title>
+    <title>Trang chủ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@
 <%--                    </div>--%>
 <%--                    <div class="panel-body">--%>
 <%--                        <table class="table table-striped table-hover" style="width: 100%">--%>
-<%--                            <a href="CT_Add_Question"> <button id="btn_get_list">Xem danh sach SV</button></a>--%>
+<%--                            <a href="CT_Add_Question"> <button id="btn_get_list">Xem danh sách sinh viên</button></a>--%>
 <%--                            <a href="CT_Add_Question"> <button id="btn_them_post">Thêm câu hỏi mới</button></a>--%>
 <%--                            <tr>--%>
 <%--                                <th>Thứ tự</th>--%>
@@ -50,7 +50,7 @@
 <%--                                <th>Đáp án B</th>--%>
 <%--                                <th>Đáp án C</th>--%>
 <%--                                <th>Đáp án D</th>--%>
-<%--                                <th>KQ</th>--%>
+<%--                                <th>Đáp án đúng</th>--%>
 <%--                                <th>Thao tác</th>--%>
 
 
@@ -65,7 +65,7 @@
 <%--                                    <td>${p.d}</td>--%>
 <%--                                    <td>${p.resukt}</td>--%>
 <%--                                    <td><a  class="btn btn-default" class="list-group-item" href="CT_Get_Question_Update?id=${p.id}">--%>
-<%--                                        Chỉnh sữa</a>--%>
+<%--                                        Sửa</a>--%>
 <%--                                        <a class="btn btn-danger"  class="list-group-item"--%>
 <%--                                           href="CT_Delete_Question?id=${p.id}">Xóa</a>--%>
 <%--                                    </td>--%>
@@ -85,13 +85,13 @@
     <div class="containerApp ">
         <div class="headerTop">
             <p class="titleApp">
-                online Exam
+                Hệ thống thi trắc nghiệm trực tuyến
             </p>
             <p class="notification">
-                (QC) Xem Phim HOT 100% DATA TOC DO CAO voi DV TV360 tai http://s.viettel.vn/cliptv. Dang ky, soan XN1 gui 1331 (3.000d/ngay, gia han theo ngay).
+                Hệ thống thi trắc nghiệm Online - Trường Đại học Nông Lâm - Khoa Công nghệ Thông tin
             </p>
             <div class="Wrap_headerLogin">
-                Xin chao, ${ten_dang_nhap}
+                Xin chào, ${ten_dang_nhap}
                 <div class="wrapSubMenu">
                     <div class="subMenu">
                         <a href="#!" class="menuItem">
@@ -130,19 +130,19 @@
     <div class="tableGrid">
         <div class="grid-col-5">
             <p class="col-title">
-                STT
+                Số thứ tự
             </p>
             <p class="col-title">
                 Câu hỏi
             </p>
             <p class="col-title">
-                Kết quả
+                Đáp án đúng
             </p>
             <p class="col-title">
-                Edit
+               Sửa
             </p>
             <p class="col-title">
-                Remove
+                Xoá
             </p>
         </div>
 
@@ -163,12 +163,12 @@
 <%--            </div>--%>
             <div class="col-content col-action">
                 <a href="CT_Get_Question_Update?id=${v.id}&code=${name}" class=" btnPrimary-sm">
-                    Edit
+                    Sửa
                 </a>
             </div>
             <div class="col-content col-action">
                 <a href="CT_Delete_Question?id=${v.id}" class="btnDanger-sm">
-                    Remove
+                    Xoá
                 </a>
             </div>
         </div>

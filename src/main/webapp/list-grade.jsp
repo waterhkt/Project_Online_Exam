@@ -10,14 +10,14 @@
 <%@ taglib prefix="cc" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Danh sách điếm</title>
     <link rel="stylesheet" href="./css/style.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Question</title>
+    <title>Trang chủ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
@@ -70,13 +70,13 @@
     <div class="containerApp ">
         <div class="headerTop">
             <p class="titleApp">
-                online Exam
+                Hệ thống thi trắc nghiệm trực tuyến
             </p>
             <p class="notification">
-                (QC) Xem Phim HOT 100% DATA TOC DO CAO voi DV TV360 tai http://s.viettel.vn/cliptv. Dang ky, soan XN1 gui 1331 (3.000d/ngay, gia han theo ngay).
+                Hệ thống thi trắc nghiệm Online - Trường Đại học Nông Lâm - Khoa Công nghệ Thông tin
             </p>
             <div class="Wrap_headerLogin">
-                Xin chao, ${ten_dang_nhap}
+                Xin chào, ${ten_dang_nhap}
                 <div class="wrapSubMenu">
                     <div class="subMenu">
                         <a href="#!" class="menuItem">
@@ -114,10 +114,10 @@
     <div class="tableGrid">
         <div class="grid-col-5">
             <p style="width: 150%" class="col-title">
-                User id
+                MSSV
             </p>
             <p class="col-title">
-                Code id
+               Mã đề
             </p>
             <p class="col-title">
                 Điểm

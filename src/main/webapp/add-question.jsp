@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Question</title>
+    <title>Trang chủ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
@@ -20,10 +20,10 @@
 <body>
 <%--<div>--%>
 <%--    <form action="CT_Add_Question">--%>
-<%--        <h3>Add Question</h3>--%>
+<%--        <h3>Tạo môn học mới</h3>--%>
 <%--        <ul>--%>
 <%--            <li>--%>
-<%--                <label>Ma De</label>--%>
+<%--                <label>Mã Đề</label>--%>
 <%--                <select name="sel">--%>
 <%--                    <option name="sel">1</option>--%>
 <%--                    <option name="sel">2</option>--%>
@@ -32,32 +32,32 @@
 <%--                </select>--%>
 <%--            </li>--%>
 <%--            <li>--%>
-<%--                <label>Thu tu</label>--%>
-<%--                <input type="text" placeholder="Thutu" name="thutu">--%>
+<%--                <label>Thứ tự</label>--%>
+<%--                <input type="text" placeholder="Thứ tự" name="thutu">--%>
 <%--            </li>--%>
 <%--            <li>--%>
-<%--                <label>Cau hoi</label>--%>
-<%--                <input type="text" placeholder="Question" name="question">--%>
+<%--                <label>Câu hỏi</label>--%>
+<%--                <input type="text" placeholder="Câu hỏi" name="question">--%>
 <%--            </li>--%>
 <%--            <li>--%>
 <%--                <label>Đáp án 1</label>--%>
-<%--                <input id="an1" type="text" placeholder="DA1" name="ans1">--%>
+<%--                <input id="an1" type="text" placeholder="Đáp án 1" name="ans1">--%>
 <%--            </li>--%>
 <%--            <li>--%>
 <%--                <label>Đáp án 2</label>--%>
-<%--                <input id="an2" type="text" placeholder="DA2" name="ans2">--%>
+<%--                <input id="an2" type="text" placeholder="Đáp án 2" name="ans2">--%>
 <%--            </li>--%>
 <%--            <li>--%>
 <%--                <label>Đáp án 3</label>--%>
-<%--                <input id="an3" type="text" placeholder="DA3" name="ans3">--%>
+<%--                <input id="an3" type="text" placeholder="Đáp án 3" name="ans3">--%>
 <%--            </li>--%>
 <%--            <li>--%>
 <%--                <label>Đáp án 4</label>--%>
-<%--                <input id="an4" type="text" placeholder="DA4" name="ans4">--%>
+<%--                <input id="an4" type="text" placeholder="Đáp án 4" name="ans4">--%>
 <%--            </li>--%>
 <%--            <li>--%>
-<%--                <label>Kết quả </label>--%>
-<%--                <input id="re" type="text" placeholder="Result" name="result">--%>
+<%--                <label>Đáp án đúng</label>--%>
+<%--                <input id="re" type="text" placeholder="Đáp án đúng" name="result">--%>
 <%--            </li>--%>
 <%--            <input  name="add-question" type="submit" value="submit">--%>
 <%--        </ul>--%>
@@ -68,10 +68,10 @@
     <div class="containerApp ">
         <div class="headerTop">
             <p class="titleApp">
-                online Exam
+                Hệ thống thi trắc nghiệm trực tuyến
             </p>
             <div class="Wrap_headerLogin">
-                Xin chao, ${ten_dang_nhap}
+                Xin chào, ${ten_dang_nhap}
                 <div class="wrapSubMenu">
                     <div class="subMenu">
                         <a href="#!" class="menuItem">
@@ -89,7 +89,7 @@
 <div class="wrapTitlePage">
     <div class="overlay"></div>
     <p class="titlePage">
-        ADD QUESTION
+        THÊM CÂU HỎI
     </p>
 </div>
 
@@ -152,7 +152,7 @@
         </div>
         <div class="wrapInputTitle">
             <p class="titleInput">
-                Kết quả
+                Đáp án đúng
             </p>
             <input type="text" class="txtInput" required name="result">
         </div>

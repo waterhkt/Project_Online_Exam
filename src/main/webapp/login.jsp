@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Login</title>
+    <title>Đăng nhập</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -76,18 +76,18 @@
 <body>
 <div class="wrapper">
     <form class="form-signin" action="CT_Login?${username}" method="post">
-        <h2 class="form-signin-heading">Please login</h2>
-        <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-        <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+        <h2 class="form-signin-heading">ĐĂNG NHẬP</h2>
+        <input type="text" class="form-control" name="username" placeholder="Tên đăng nhập" required="" autofocus="" />
+        <input type="password" class="form-control" name="password" placeholder="Mật khẩu" required=""/>
         <label class="checkbox">
-            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Nhớ mật khẩu
         </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Đăng nhập</button>
     </form >
 <%--    <div class="correc">--%>
 <%--        <form action="CT_Login_Correct">--%>
-<%--            <label class="corect-content">Nhập sai username hoặc password</label>--%>
-<%--            <button class="" type="submit">OK</button>--%>
+<%--            <label class="corect-content">Nhập sai tên đăng nhập hoặc mật khẩu</label>--%>
+<%--            <button class="" type="submit">Nhập lại</button>--%>
 <%--        </form>--%>
 <%--    </div>--%>
 </div>

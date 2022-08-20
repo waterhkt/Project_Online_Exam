@@ -74,7 +74,7 @@ public class ExamEntity {
         }
 
     }
-    //Lấy thông tin tài khoản cần chỉnh sữa
+    //Lấy thông tin tài khoản cần Sửa
     public static Exam getExamById(int idExam) {
         Exam exam ;
         Connection con=null;

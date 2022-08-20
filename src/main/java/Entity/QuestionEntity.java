@@ -340,7 +340,7 @@ public class QuestionEntity {
         }
 
     }
-    //Chỉnh sữa thông tin question
+    //Sửa thông tin question
     public static int update(Question q){
         Connection con;
         PreparedStatement pre = null;

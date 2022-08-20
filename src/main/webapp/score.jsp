@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Score</title>
+    <title>Hoàn thành bài thi</title>
     <style>
         h1{
             text-align: center;

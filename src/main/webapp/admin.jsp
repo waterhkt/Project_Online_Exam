@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Question</title>
+    <title>Trang chủ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
@@ -236,10 +236,10 @@
     <div class="containerApp ">
         <div class="headerTop">
             <p class="titleApp">
-                online Exam
+                Hệ thống thi trắc nghiệm trực tuyến
             </p>
             <div class="Wrap_headerLogin">
-                Xin chao, ${ten_dang_nhap}
+                Xin chào, ${ten_dang_nhap}
                 <div class="wrapSubMenu">
                     <div class="subMenu">
                         <a href="#!" class="menuItem">
@@ -257,7 +257,7 @@
 <div class="wrapTitlePage">
     <div class="overlay"></div>
     <p class="titlePage">
-        Dashboard
+        Hệ thống thi trắc nghiệm trực tuyến
     </p>
 </div>
 
@@ -275,7 +275,7 @@
     <div class="tableGrid">
         <div class="grid-col-5">
             <p class="col-title">
-                STT
+                Số thứ tự
             </p>
             <p class="col-title">
                 Tên môn học
@@ -284,10 +284,10 @@
                 Số tín chỉ
             </p>
             <p class="col-title">
-                Action
+                <i class="fa-solid fa-eye"></i>
             </p>
             <p class="col-title">
-                Action
+                <i class="fa-solid fa-trash-can"></i>
             </p>
         </div>
 
@@ -308,12 +308,12 @@
                 </div>
                 <div class="col-content col-action">
                     <a href="CT_List_Code?id=${v.ma}" type="submit" class=" btnPrimary-sm">
-                        Show
+                        Hiển thị
                     </a>
                 </div>
                 <div class="col-content col-action">
                     <a href="CT_Delete_Subject?id=${v.ma}" class="btnDanger-sm">
-                        Remove
+                        Xoá môn học
                     </a>
                 </div>
             </div>

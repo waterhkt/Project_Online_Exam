@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Question</title>
+    <title>Cập nhật câu hỏi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
@@ -20,11 +20,11 @@
 <body>
 <%--<div>--%>
 <%--    <form action="CT_Question_Update">--%>
-<%--        <h3>Update Question</h3>--%>
+<%--        <h3>Cập nhật câu hỏi</h3>--%>
 <%--        <input name="id" value="${detail.id}">--%>
 <%--        <ul>--%>
 <%--            <li>--%>
-<%--                <label>Ma De</label>--%>
+<%--                <label>Mã đề</label>--%>
 <%--                <select name="sel">--%>
 <%--                    <option name="sel">1</option>--%>
 <%--                    <option name="sel" >2</option>--%>
@@ -33,32 +33,32 @@
 <%--                </select>--%>
 <%--            </li>--%>
 <%--            <li>--%>
-<%--                <label>Thu tu</label>--%>
-<%--                <input type="text" placeholder="Thutu" name="thutu" value="${detail.number}">--%>
+<%--                <label>Thứ tự</label>--%>
+<%--                <input type="text" placeholder="Thứ tự" name="thutu" value="${detail.number}">--%>
 <%--            </li>--%>
 <%--            <li>--%>
-<%--                <label>Cau hoi</label>--%>
-<%--                <input type="text" placeholder="Question" name="question"  value="${detail.content}">--%>
+<%--                <label>Câu hỏi</label>--%>
+<%--                <input type="text" placeholder="Câu hỏi" name="question"  value="${detail.content}">--%>
 <%--            </li>--%>
 <%--            <li>--%>
 <%--                <label>Đáp án 1</label>--%>
-<%--                <input type="text" placeholder="DA1" name="ans1"  value="${detail.a}">--%>
+<%--                <input type="text" placeholder="Đáp án 1" name="ans1"  value="${detail.a}">--%>
 <%--            </li>--%>
 <%--            <li>--%>
 <%--                <label>Đáp án 2</label>--%>
-<%--                <input type="text" placeholder="DA2" name="ans2"  value="${detail.b}">--%>
+<%--                <input type="text" placeholder="Đáp án 2" name="ans2"  value="${detail.b}">--%>
 <%--            </li>--%>
 <%--            <li>--%>
 <%--                <label>Đáp án 3</label>--%>
-<%--                <input type="text" placeholder="DA3" name="ans3"  value="${detail.c}">--%>
+<%--                <input type="text" placeholder="Đáp án 3" name="ans3"  value="${detail.c}">--%>
 <%--            </li>--%>
 <%--            <li>--%>
 <%--                <label>Đáp án 4</label>--%>
-<%--                <input type="text" placeholder="DA4" name="ans4"  value="${detail.d}">--%>
+<%--                <input type="text" placeholder="Đáp án 4" name="ans4"  value="${detail.d}">--%>
 <%--            </li>--%>
 <%--            <li>--%>
-<%--                <label>Kết quả </label>--%>
-<%--                <input type="text" placeholder="Result" name="result"  value="${detail.resukt}">--%>
+<%--                <label>Đáp án đúng </label>--%>
+<%--                <input type="text" placeholder="Đáp án đúng" name="result"  value="${detail.resukt}">--%>
 <%--            </li>--%>
 <%--            <input type="submit" value="submit">--%>
 <%--        </ul>--%>
@@ -69,10 +69,10 @@
     <div class="containerApp ">
         <div class="headerTop">
             <p class="titleApp">
-                online Exam
+                Hệ thống thi trắc nghiệm trực tuyến
             </p>
             <div class="Wrap_headerLogin">
-                Xin chao, ${ten_dang_nhap}
+                Xin chào, ${ten_dang_nhap}
                 <div class="wrapSubMenu">
                     <div class="subMenu">
                         <a href="#!" class="menuItem">
@@ -90,7 +90,7 @@
 <div class="wrapTitlePage">
     <div class="overlay"></div>
     <p class="titlePage">
-        ADD QUESTION
+        THÊM CÂU HỎI
     </p>
 </div>
 
@@ -147,7 +147,7 @@
         </div>
         <div class="wrapInputTitle">
             <p class="titleInput">
-                Kết quả
+                Đáp án đúng
             </p>
             <input type="text" class="txtInput" required name="result"  value="${detail.resukt}">
         </div>

@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exam Online </title>
+    <title>Trang chủ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Question</title>
+    <title>Trang chủ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
@@ -71,11 +71,11 @@
 <body>
 <%--<div class="container">--%>
 <%--    <div>--%>
-<%--        <h1 style="text-align: center;color: blue;margin-top: 70px;font-size: 42px">Hệ thông thi trắc nghiệm trực tuyến </h1>--%>
+<%--        <h1 style="text-align: center;color: blue;margin-top: 70px;font-size: 42px">Hệ thống thi trắc nghiệm trực tuyến </h1>--%>
 <%--    </div>--%>
 <%--    <div style="width: 40%;margin-top: 30px;margin-left: 40%;">--%>
 <%--        <div style="display: flex;width: 66%">--%>
-<%--            <h4 style="flex: 1">Thí sinh :</h4>--%>
+<%--            <h4 style="flex: 1">Thí sinh:</h4>--%>
 <%--            <p style="flex: 1.4;margin-top: 4%;color: #c0392b;font-size: 18px">Nguyễn Văn A</p>--%>
 <%--        </div>--%>
 <%--    </div>--%>
@@ -84,13 +84,13 @@
     <div class="containerApp ">
         <div class="headerTop">
             <p class="titleApp">
-                online Exam
+                Hệ thống thi trắc nghiệm trực tuyến
             </p>
             <p class="notification">
-                (QC) Xem Phim HOT 100% DATA TOC DO CAO voi DV TV360 tai http://s.viettel.vn/cliptv. Dang ky, soan XN1 gui 1331 (3.000d/ngay, gia han theo ngay).
+                Hệ thống thi trắc nghiệm Online - Trường Đại học Nông Lâm - Khoa Công nghệ Thông tin
             </p>
             <div class="Wrap_headerLogin">
-                Xin chao, ${ten_dang_nhap}
+                Xin chào, ${ten_dang_nhap}
                 <div class="wrapSubMenu">
                     <div class="subMenu">
                         <a href="#!" class="menuItem">
@@ -130,7 +130,7 @@
                     <cc:forEach items="${list}" var="p">
                     <form action="#" style="flex: 1">
                         <h3>${p.name}</h3>
-                        <p>Thời gian làm bài : 60 phút</p>
+                        <p>Thời gian làm bài: 60 phút</p>
 <%--                        <a href="CT_Load_Question?subjectName=${p.name}">Làm bài</a>--%>
                         <a href="CT_Check_Inf?subId=${p.ma}">Làm bài</a>
                     </form>

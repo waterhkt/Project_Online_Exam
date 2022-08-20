@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Question</title>
+    <title>Trang chủ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
@@ -242,7 +242,7 @@
 <%--        <!-- End: Nav -->--%>
 
 <%--    </div>--%>
-<%--<h1 style="text-align: center;margin-top: 100px">Trang quan ly he thong thi online danh cho giao vien</h1>--%>
+<%--<h1 style="text-align: center;margin-top: 100px">TRANG QUẢN LÝ HỆ THỐNG THI ONLINE DÀNH CHO GIÁO VIÊN</h1>--%>
 <%--    <div class="btn-create">--%>
 <%--        <button  class="js-add-subject add-subject">Tạo môn học</button>--%>
 <%--    </div>--%>
@@ -265,13 +265,13 @@
     <div class="containerApp ">
         <div class="headerTop">
             <p class="titleApp">
-                online Exam
+                Hệ thống thi trắc nghiệm trực tuyến
             </p>
             <p class="notification">
-                (QC) Xem Phim HOT 100% DATA TOC DO CAO voi DV TV360 tai http://s.viettel.vn/cliptv. Dang ky, soan XN1 gui 1331 (3.000d/ngay, gia han theo ngay).
+                Hệ thống thi trắc nghiệm Online - Trường Đại học Nông Lâm - Khoa Công nghệ Thông tin
             </p>
             <div class="Wrap_headerLogin">
-                Xin chao, ${ten_dang_nhap}
+                Xin chào, ${ten_dang_nhap}
                 <div class="wrapSubMenu">
                     <div class="subMenu">
                         <a href="#!" class="menuItem">
@@ -305,16 +305,16 @@
     <div class="tableGrid">
         <div class="grid-col-5">
             <p class="col-title">
-                Mã đề
+                Số thứ tự
             </p>
             <p class="col-title">
-                Code name
+                Mã đề
             </p>
             <%--            <p class="col-title">--%>
             <%--                Thời gian làm bài--%>
             <%--            </p>--%>
             <p class="col-title">
-                Code Description
+                Mô tả
             </p>
             <p class="col-title">
 
@@ -355,7 +355,7 @@
                 </div>
                 <div class="col-content col-action">
                     <a href="CT_Delete_Code?a=${v.id}" class="btnDanger-sm">
-                        Remove
+                       Xoá
                     </a>
                 </div>
             </div>
@@ -387,12 +387,12 @@
                     <input type="text" class="txtInput" name="des" required>
                 </div>
                 <div class="wrapInputTitle">
-                    <label for="file" class="custom-uploader">Upload Your File</label>
+                    <label for="file" class="custom-uploader">Tải lên</label>
                     <input id="file" type="file" name="fileToUploadExam" >
 <%--                    <input type="text" class="txtInput" name="quan" required>--%>
                 </div>
 <%--                <div class="wrapInputTitle">--%>
-<%--                    <label for="file" class="custom-uploader">Upload Your File</label>--%>
+<%--                    <label for="file" class="custom-uploader">Tải lên</label>--%>
 <%--                    <input id="file" type="file" name="fileToUploadStudent" >--%>
 <%--                    &lt;%&ndash;                    <input type="text" class="txtInput" name="quan" required>&ndash;%&gt;--%>
 <%--                </div>--%>

@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Question</title>
+    <title>Trang chủ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
@@ -239,13 +239,13 @@
     <div class="containerApp ">
         <div class="headerTop">
             <p class="titleApp">
-                online Exam
+                Hệ thống thi trắc nghiệm trực tuyến
             </p>
             <p class="notification">
-                (QC) Xem Phim HOT 100% DATA TOC DO CAO voi DV TV360 tai http://s.viettel.vn/cliptv. Dang ky, soan XN1 gui 1331 (3.000d/ngay, gia han theo ngay).
+                Hệ thống thi trắc nghiệm Online - Trường Đại học Nông Lâm - Khoa Công nghệ Thông tin
             </p>
             <div class="Wrap_headerLogin">
-                Xin chao, ${ten_dang_nhap}
+                Xin chào, ${ten_dang_nhap}
                 <div class="wrapSubMenu">
                     <div class="subMenu">
                         <a href="#!" class="menuItem">
@@ -279,13 +279,13 @@
     <div class="tableGrid" >
         <div class="grid-col-5">
             <p class="col-title">
-                Student ID
+                MSSV
             </p>
             <p class="col-title">
-                Name
+                Họ và tên
             </p>
             <p class="col-title">
-                Grade
+                Điểm
             </p>
             <p class="col-title">
                 Rating
@@ -317,16 +317,16 @@
                 <div class="col-content col-action">
                     <a href="#" class="btnDanger-sm">
 <%--                        <a href="CT_Delete_Code?a=${v.id}" class="btnDanger-sm"></a>--%>
-                        Remove
+                        Xoá
                     </a>
                 </div>
             </div>
         </cc:forEach>
-        <div style="margin-top: 100px"> <h2 style="text-align: center ;color: #16496D">Thống kế </h2></div>
+        <div style="margin-top: 100px"> <h2 style="text-align: center ;color: #16496D">Thống kê </h2></div>
         <table class="table table-bordered">
             <thead>
             <tr>
-                <th class="title-statistical" >Tổng</th>
+                <th class="title-statistical">Tổng</th>
                 <th class="title-statistical">Giỏi</th>
                 <th class="title-statistical">Khá</th>
                 <th class="title-statistical">Trung Bình</th>
@@ -358,14 +358,14 @@
 <%--            <input style="display: none" name="idsub" value="${id}">--%>
             <div class="formCreateLession">
                 <div class="wrapInputTitle">
-                    <label for="file" class="custom-uploader">Upload Your File</label>
+                    <label for="file" class="custom-uploader">Tải lên</label>
                     <input id="file" type="file" name="fileToUploadStudent" >
                 </div>
 
             </div>
             <div class="wrapButtonForm">
                 <input type="reset" class="btnDanger-sm" value="Reset">
-                <input type="submit" class="btnPrimary-sm" value="Save">
+                <input type="submit" class="btnPrimary-sm" value="Lưu">
             </div>
         </form>
     </div>
