@@ -160,6 +160,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             font-size: 30px;
             font-weight: 400;
             letter-spacing: 4px;
@@ -247,7 +248,7 @@
 <%--        <button  class="js-add-subject add-subject">Tạo môn học</button>--%>
 <%--    </div>--%>
 <%--&lt;%&ndash;    <div class="btn">&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <a href="CT_Add_Question"  class="">Add question</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;        <a href="CT_Add_Question"  class="">Thêm câu hỏi</a>&ndash;%&gt;--%>
 <%--&lt;%&ndash;    </div>&ndash;%&gt;--%>
 
 <%--    <div class="list-subject">--%>
@@ -343,11 +344,11 @@
                 <div class="col-content col-action">
                     <form action="CT_Load_List">
                         <input style="display: none" name="na" value="${v.name}">
-                        <input type="submit" class=" btnPrimary-sm" value="show">
+                        <input type="submit" class=" btnPrimary-sm" value="Xem danh sách câu hỏi">
                     </form>
                     <form action="CT_Load_Student">
                         <input style="display: none" name="na" value="${v.name}">
-                        <input type="submit" class=" btnPrimary-sm" value="show DS">
+                        <input type="submit" class=" btnPrimary-sm" value="Xem danh sách sinh viên">
                     </form>
 <%--                    <a href="CT_Load_List?name1= ${v.name}" type="submit" name="nameMH" class=" btnPrimary-sm">--%>
 <%--                        Ques--%>

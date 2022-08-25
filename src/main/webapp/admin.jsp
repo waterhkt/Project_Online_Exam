@@ -308,7 +308,7 @@
                 </div>
                 <div class="col-content col-action">
                     <a href="CT_List_Code?id=${v.ma}" type="submit" class=" btnPrimary-sm">
-                        Hiển thị
+                        Xem chi tiết
                     </a>
                 </div>
                 <div class="col-content col-action">
