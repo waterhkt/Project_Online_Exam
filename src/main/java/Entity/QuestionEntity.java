@@ -208,6 +208,40 @@ public class QuestionEntity {
             ex1.printStackTrace();
         }
     }
+    public int getCodeByFile(String link) {
+        String excelFilePath ="G:\\AxonActiveProject\\ProjectAxonActive\\"+ link;
+        int resultCode =0;
+        try {
+
+            FileInputStream inputStream = new FileInputStream(excelFilePath);
+
+            Workbook workbook = new XSSFWorkbook(inputStream);
+
+            Sheet firstSheet = workbook.getSheetAt(0);
+            Iterator<Row> rowIterator = firstSheet.iterator();
+            rowIterator.next(); // skip the header row
+            while (rowIterator.hasNext()) {
+                Row nextRow = rowIterator.next();
+                Iterator<Cell> cellIterator = nextRow.cellIterator();
+                Question q = new Question();
+                while (cellIterator.hasNext()) {
+                    Cell nextCell = cellIterator.next();
+                    int columnIndex = nextCell.getColumnIndex();
+                    switch (columnIndex) {
+
+                        case 0:
+                            resultCode = Integer.parseInt(nextCell.getStringCellValue());
+                            break;
+                    }
+                }
+            }
+        } catch (IOException ex1) {
+            System.out.println("Error reading file");
+            ex1.printStackTrace();
+            return 0;
+        }
+        return resultCode;
+    }
     // Thêm 1 cau hoi vào database
     public static int addone(Question q){
         PreparedStatement pre = null;

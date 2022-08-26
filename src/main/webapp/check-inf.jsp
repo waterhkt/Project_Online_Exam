@@ -37,7 +37,7 @@
 <body>
 <div class="container">
     <form action="CT_Load_Question">
-        <input name="subject" style="" value="${subid}">
+        <input name="subject"  style="display: none" value="${subid}">
         <input style="display: none" name="username" class="txtContentInfo" value="${ten_dang_nhap}">
         <h3 style="color: brown;font-size: 32px;">Nhập mã số sinh viên</h3>
         <div style="width: 100%"><input class="code form-control" type="text" name="code_name" ></div>

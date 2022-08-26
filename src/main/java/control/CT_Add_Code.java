@@ -35,10 +35,12 @@ public class CT_Add_Code extends HttpServlet {
             String subid = request.getParameter("idsub");
             int codeid = CodeEntity.maxIdCode();
             String user = request.getParameter("dn");
-            String id = request.getParameter("codename");
+//            String id = request.getParameter("codename");
             String des = request.getParameter("des");
             String time = "60";
             String quan = "40";
+
+            int codeName = qe.getCodeByFile(link1);
 //            int userid = UserEntity.getIdUser(user);
 //            System.out.print(user+ subid);
 //            int count = QuestionEntity.maxMaCauHoi() +1;
@@ -47,9 +49,9 @@ public class CT_Add_Code extends HttpServlet {
             }
             Code s = new Code();
 
-            if(id!=null ||des!=null|| time!=null  ) {
+            if(des!=null|| time!=null  ) {
                 s.setId(codeid+1);
-                s.setName(id);
+                s.setName(String.valueOf(codeName));
                 s.setSubid(Integer.parseInt(subid));
                 s.setUserid(0);
                 s.setDes(des);
@@ -58,7 +60,7 @@ public class CT_Add_Code extends HttpServlet {
                 CodeEntity.addone(s);
                 request.getRequestDispatcher("/CT_List_Code?id="+subid).forward(request,response);
             }
-            if(id==null ||des==null|| time==null  )
+            if(des==null|| time==null  )
                 request.getRequestDispatcher("/CT_Index").forward(request,response);
 
         }finally {

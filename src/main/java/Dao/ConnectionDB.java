@@ -51,6 +51,39 @@ public class ConnectionDB {
             return con.prepareCall(sql);
         }
     }
+//public static Statement connect() throws ClassNotFoundException, SQLException {
+//    if (con == null || con.isClosed()) {
+//        Class.forName("com.mysql.jdbc.Driver");
+//        con = DriverManager.getConnection(
+//                "jdbc:mysql://localhost:3306/axonactive", "root", "18130042");
+//        if (con != null) System.out.println("da ket noi");
+//        return con.createStatement();
+//    } else
+//        return con.createStatement();
+//
+//}
+//
+//    public static PreparedStatement connect(String sql) throws ClassNotFoundException, SQLException {
+//        if (con == null || con.isClosed()) {
+//            Class.forName("com.mysql.jdbc.Driver");
+//            con = DriverManager.getConnection(
+//                    "jdbc:mysql://localhost:3306/axonactive", "root", "18130042");
+//            return con.prepareStatement(sql);
+//        } else {
+//            return con.prepareStatement(sql);
+//        }
+//    }
+//
+//    public static PreparedStatement connectupdate(String sql) throws ClassNotFoundException ,SQLException {
+//        if (con == null || con.isClosed()) {
+//            Class.forName("com.mysql.jdbc.Driver");
+//            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/axonactive", "root", "18130042");
+//            return con.prepareCall(sql);
+//        } else {
+//            return con.prepareCall(sql);
+//        }
+//    }
+
     public static void main(String[] args) throws SQLException, ClassNotFoundException, IOException {
 //    try{
 //        Class.forName("com.mysql.jdbc.Driver");
@@ -87,13 +120,14 @@ public class ConnectionDB {
 
 //    System.out.print(CodeEntity.getIdCode("123"));
 
-        StudentEntity st = new StudentEntity();
+//        StudentEntity st = new StudentEntity();
 //        st.update(2,18130042);
 //        st.uploadFile("Students.xlsx");
 //        System.out.print(st.checkCode(18130051));
 //        AnswersAntity a = new AnswersAntity();
 //
-//        QuestionEntity q = new QuestionEntity();
+        QuestionEntity q = new QuestionEntity();
+        System.out.print(q.getCodeByFile("Exams.xlsx")+"code");
 //        List<Question> lq = q.getAll();
 ////        q.uploadFile("Exams.xlsx");
 //int re=0;
@@ -108,27 +142,27 @@ public class ConnectionDB {
 //        System.out.print(re + "   111111");
 //        UserEntity.addone(new User("1111","1111",0));
 //        Cập nhập điểm
-        QuestionEntity q1 = new QuestionEntity();
-        List<Question> lq = q1.getAllQuestionByCodeID("125");
-        System.out.print(lq.size()+"lq");
-        int re=0;
-        AnswersAntity sc = new AnswersAntity();
-        for (int i = 0; i<StudentEntity.getAll().size();i++) {
-            List<Answers> scc = sc.getAll(StudentEntity.getAll().get(i).getStudentId(), 125);
-            if (scc.size() == 0) {
-                re = 0;
-            } else {
-                System.out.print(scc.size()+"sc");
-                for (int j = 0; j < scc.size(); j++) {
-                    if (lq.get(j).getResukt().equals(scc.get(j).getAnswersChoosecol())){
-                        re++;
-                    }
-
-                }
-                System.out.print("aaaaaaa"+re/2+"jjjjjjjj");
-            }
-
-        }
+//        QuestionEntity q1 = new QuestionEntity();
+//        List<Question> lq = q1.getAllQuestionByCodeID("125");
+//        System.out.print(lq.size()+"lq");
+//        int re=0;
+//        AnswersAntity sc = new AnswersAntity();
+//        for (int i = 0; i<StudentEntity.getAll().size();i++) {
+//            List<Answers> scc = sc.getAll(StudentEntity.getAll().get(i).getStudentId(), 125);
+//            if (scc.size() == 0) {
+//                re = 0;
+//            } else {
+//                System.out.print(scc.size()+"sc");
+//                for (int j = 0; j < scc.size(); j++) {
+//                    if (lq.get(j).getResukt().equals(scc.get(j).getAnswersChoosecol())){
+//                        re++;
+//                    }
+//
+//                }
+//                System.out.print("aaaaaaa"+re/2+"jjjjjjjj");
+//            }
+//
+//        }
     }
 }
 

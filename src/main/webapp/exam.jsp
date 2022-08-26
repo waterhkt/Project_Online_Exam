@@ -112,7 +112,7 @@
     <div class="wrapContentExam">
         <form action="CT_Submit?score=${score}" class="contentExam">
             <input style="display: none" name="username" class="txtContentInfo" value="${ten_dang_nhap}">
-            <input  name="code" class="txtContentInfo" value="${code1}">
+            <input  name="code" class="txtContentInfo" value="${code1}" style="display: none">
             <cc:forEach items="${list}" var="p">
             <div class="question">
                 <p class="title">

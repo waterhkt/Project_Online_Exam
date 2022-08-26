@@ -375,12 +375,12 @@
             <input style="display: none" name="dn" value="${ten_dang_nhap}">
             <input style="display: none" name="idsub" value="${id}">
             <div class="formCreateLession">
-                <div class="wrapInputTitle">
-                    <p class="titleInput">
-                        Mã đề
-                    </p>
-                    <input type="text" class="txtInput" name="codename" required>
-                </div>
+<%--                <div class="wrapInputTitle" style="display: none">--%>
+<%--                    <p class="titleInput">--%>
+<%--                        Mã đề--%>
+<%--                    </p>--%>
+<%--                    <input type="text" class="txtInput" name="codename" required>--%>
+<%--                </div>--%>
                 <div class="wrapInputTitle">
                     <p class="titleInput">
                         Mô tả
