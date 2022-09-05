@@ -87,15 +87,18 @@ public class CT_Question_Update extends HttpServlet {
                     }}
 //                    double score = Math.round(re/2 *10 / (lq.size())* 100.0) / 100.0;
                     double score = re *10 / (lq.size());
-                    StudentEntity.update(score, StudentEntity.getAllByCode(code).get(i).getStudentId());
-                    re=0;
 //                    Thông báo mail khi thay đổi đáp án
                     try {
-                        EmailUtility.sendEmail(host, port, user, pass, StudentEntity.getAllByCode(code).get(i).getEmail(), "Đồ án chuyên ngành",
-                                "Điểm của bạn đã thay đổi thành :"+score );
+                        if(StudentEntity.getAllByCode(code).get(i).getGrade() != score) {
+                            EmailUtility.sendEmail(host, port, user, pass, StudentEntity.getAllByCode(code).get(i).getEmail(), "Đồ án chuyên ngành",
+                                    "Điểm của bạn đã thay đổi thành :" + score);
+                        }
                     } catch (MessagingException e) {
                         e.printStackTrace();
                     }
+                    StudentEntity.update(score, StudentEntity.getAllByCode(code).get(i).getStudentId());
+                    re=0;
+//
                 }
                 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/CT_Subject");
                 dispatcher.forward(request,response);

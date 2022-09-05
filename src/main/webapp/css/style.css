@@ -220,7 +220,7 @@ form {
 
 .grid-col-5 {
     display: grid;
-    grid-template-columns: 100px 1fr 200px 200px 200px;
+    grid-template-columns: 100px 100px 1fr 422px 200px;
 
     border-top: 1px solid black;
     border-left: 1px solid black;

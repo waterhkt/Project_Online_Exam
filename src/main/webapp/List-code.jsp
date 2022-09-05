@@ -304,7 +304,7 @@
         </label>
     </div>
     <div class="tableGrid">
-        <div class="grid-col-5">
+        <div class="grid-col-5" style=" grid-template-columns: 100px 100px 1fr 422px 200px;">
             <p class="col-title">
                 Số thứ tự
             </p>
@@ -327,7 +327,7 @@
 
         <!-- HÀNG -->
         <cc:forEach items="${list}" var="v">
-            <div class="grid-col-5">
+            <div class="grid-col-5" style=" grid-template-columns: 100px 100px 1fr 422px 200px;">
                 <div class="col-content col-action">
                     1
                 </div>

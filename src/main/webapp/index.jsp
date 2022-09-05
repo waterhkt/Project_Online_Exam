@@ -53,7 +53,8 @@
             padding-bottom: 3%;
         }
         h2{
-            margin-top: 150px;
+            margin-top: 20px;
+            font-weight: 600;
         }
         h3,p,button{
             margin-left: 3%;
@@ -129,10 +130,11 @@
                 <li style="display: flex;flex-direction: column;">
                     <cc:forEach items="${list}" var="p">
                     <form action="#" style="flex: 1">
-                        <h3>${p.name}</h3>
-                        <p>Thời gian làm bài: 60 phút</p>
+                        <h3 style="margin-top: 10px">${p.name}</h3>
+                        <p style="padding-bottom: 10px;">Thời gian làm bài: 60 phút</p>
 <%--                        <a href="CT_Load_Question?subjectName=${p.name}">Làm bài</a>--%>
-                        <a href="CT_Check_Inf?subId=${p.ma}">Làm bài</a>
+                        <a style="background-color: #292589;padding: 10px;border-radius: 3px;margin-left: 3%;color: white;
+                            text-decoration: none;" href="CT_Check_Inf?subId=${p.ma}">Làm bài</a>
                     </form>
                     </cc:forEach>
                 </li>

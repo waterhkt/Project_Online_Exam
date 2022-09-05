@@ -33,9 +33,10 @@ public class CT_Import_File extends HttpServlet {
 
         try {
             String link2 = request.getParameter("fileToUploadStudent");
+//            String name = request.getParameter("na");
+//            String subId = request.getParameter("subId");
             StudentEntity ss = new StudentEntity();
             ss.uploadFile(link2);
-            String name = request.getParameter("na");
             List<Student> value = new LinkedList<>();
             StudentEntity pr = new StudentEntity();
             UserEntity us = new UserEntity();
